@@ -1,0 +1,358 @@
+* {
+    margin:0px; 
+    padding: 0px;;
+    box-sizing: border-box;
+}
+   
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.side-bar{
+    width: 400px;
+    height: 100vh;
+    background-color:  rgb(19, 18, 18);
+    position: fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    padding: 10px;
+    
+
+}
+.side-barnav{
+    background: rgb(23, 23, 23);
+    border-radius: 10px;
+    padding: 20px 10px;
+   
+    
+}
+.side-barnav .logo{
+    width: 130px;
+}
+.side-barnav .logo img{
+    width: 100%;
+}
+.side-barnav{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.side-barnav ul li{
+    padding:10px 20px;
+    list-style: none;
+
+}
+.side-barnav ul .one a{
+    color: white;
+}
+.side-barnav ul li a{
+    color: rgb(140, 136, 136);
+    text-decoration:none;
+    font-size: 16px;
+    font-weight: 600;
+
+
+}
+.side-barnav ul li a:hover{
+    color: white;
+}
+
+.side-barnav ul li a i{
+    font-size:20px;
+    margin-right: 10px;
+}
+.library::after{
+    content:'+';
+    float: right;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+
+}
+.create-playlist {
+    background-color: rgb(35, 34, 34);
+    margin:0px;
+    border-radius: 10px;
+    padding:10px 10px;
+    margin-bottom: 26px;
+
+}
+.side-barscroll{
+    margin-left:-25px;  
+    margin-right: -25px;
+    margin-bottom: -30px;
+    height: 190px;
+    overflow-y:scroll;
+}
+
+.side-barscroll::-webkit-scrollbar{
+    background: transparent;
+    width:10px;
+
+}
+.side-barscroll:hover::-webkit-scrollbar-thumb{
+    background: rgb(61, 60, 60);
+
+}
+.create-playlist h4{
+    color: white;
+    font-size: 18px;
+}
+.create-playlist p{
+    color: white;
+    font-size: 15px;
+    margin: 12px 0px;
+}
+.create-playlist button {
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+button:hover{
+    transform:scale(1.1);
+}
+.privacy ul li a{
+    text-decoration: none;
+    color:rgb(140, 136, 136); 
+    font-size: 12px;
+    font-weight: 500;
+    margin:0 5px;
+}
+.privacy ul{
+    list-style: none;
+    margin-top:30px;
+    margin-left: 20px;
+}
+.privacy ul li {
+    padding-bottom: 12px;
+
+}
+.eng-button{
+    padding:20px;
+}
+.eng-button button{
+    padding:5px 10px;
+    background: transparent;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    color: white;
+    border:1px solid rgb(137, 131, 131);
+    border-radius: 20px;
+    cursor:pointer;
+
+}
+.main-section{
+    height: 100vh;;
+    margin-left: 400px;
+    background-color:  rgb(11, 10, 10);
+    overflow-y:auto;
+    margin-bottom: 60px;
+}
+.main-section::-webkit-scrollbar{
+    background: transparent;
+}
+.main-section::-webkit-scrollbar-thumb{
+    background: transparent;
+    width:15px;
+}
+.main-section:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(58, 57, 57);
+    width: 5px;
+}
+.main-section .top-nav{
+    height: 80px;
+    width: 100%;
+    padding: 25px 30px;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-section .top-nav .prev-button button {
+    font-size: 30px;
+    background: transparent;
+    outline:none;
+    border:0;
+    color: grey;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.signup-button button {
+    font-size: 20px;
+    color: gray;
+    background: transparent;
+    outline:none;
+    border:0;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.login-button button{
+    font-size: 25px;
+    color:rgb(11, 11, 11);
+    cursor: pointer;
+    border-radius: 20px;
+    padding:5px 25px;
+}
+.spotify-playlist{
+    padding:10px 10px;
+    background-color: rgb(11, 10, 10);
+    height: 330px;
+    margin-top: 20px;
+    
+}
+.spotify-playlist h2{
+    color: white;
+    font-size: 25px;
+    margin:5px;
+
+}
+.spotify-playlist .card{
+    height:280px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.spotify-playlist .card .item{
+    width:200px;
+    min-width: 220px;
+    background-color: rgb(11, 10, 10);
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px;
+}
+.spotify-playlist .card .item .img{
+    width: 200px;
+    height: 75%;
+    border-radius: 6px;
+    padding-bottom: 5px;
+}
+.spotify-playlist h4{
+    color: white;
+}
+.spotify-playlist p{
+    color:  rgb(143, 141, 141);;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 15px ;
+    line-height: 20px;
+    overflow:auto;
+
+}
+.spotify-playlist .card .item:hover{
+    background-color: rgb(35, 33, 33);
+}
+.spotify-playlist p:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .play-button{
+    position: relative;
+    font-size: 20px;
+}
+.spotify-playlist .play-button i{
+    position: absolute;
+    background-color: rgb(25, 226, 25);
+    border-radius: 50%;
+    padding: 12px 15px;  
+    right:2px;
+    top:-60px;
+    opacity: 0;
+}
+.spotify-playlist .card .item:hover .play-button i{
+    opacity: 1;
+}
+.spotify-playlist .card .item .img1{
+    width: 200px;
+    height: 75%;
+    border-radius: 6px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+}
+
+.footer-section{
+    background-color: white;
+    height: 300px;
+    padding: 30px;
+    background-color:  rgb(11, 10, 10);
+}
+.footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-coloumn ul li{
+    list-style: none;
+    color: rgb(138, 136, 136);
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.footer-coloumn ul li:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer-links{
+    width: 100%;
+}
+.heading{
+    padding: 10px 0px;
+    color: white;
+    font-weight: 600;
+
+}
+.social-links i{
+    color: white;
+    background-color: rgb(65, 64, 64);
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 20px;
+
+}
+.social-links i:hover{
+    background-color:rgb(138, 136, 136);;
+}
+hr{
+    margin:20px 40px;
+    border: 1px solid rgb(78, 77, 77);
+}
+.copyright{
+    color: rgb(169, 167, 167);
+    margin: 40px 40px 150px 40px;
+    font-size: 15px;
+}
+.preview{ 
+    background: linear-gradient(to right, rgb(170, 33, 170),rgb(16, 71, 158));
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0px;
+    margin: 7px 0px 3px 0px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right: 0;
+
+}
+.button button{
+    border-radius: 30px;
+    padding: 15px 25px;
+    border:0px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.text p{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.text h{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+
+}
